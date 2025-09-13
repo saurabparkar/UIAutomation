@@ -1,0 +1,11 @@
+# Include requirements and pytest configuration
+include requirements.txt
+include pytest.ini
+
+# Include everything inside UIFramework/config
+recursive-include UIFramework/config *.py *.yaml *.json *.ini
+
+# Include tests (optional, only if you want to ship tests with the package)
+recursive-include UIFramework/tests *.py
+
+
